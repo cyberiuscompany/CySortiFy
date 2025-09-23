@@ -24,115 +24,157 @@
   </a>
 </p>
 
-# Template
-This is the template I use for building my cybersecurity tools/projects.
+# CySortiFy
+CySortify is a lightweight **Python** tool that automatically organizes your **Downloads** folder on Windows, classifying files into **logical categories** (Docs, Pics, Movies, Setups, etc.) or by **extension** if they don't match any defined category.  
 
-Explanation of what the tool does.
+---
 
-- GitHub Pages if available: https://cyberiuscompany.github.io/TOOL-NAME
-- DeepWiki for the tool: https://deepwiki.com/FILL+INDEX
+## 📝 Usage
+
+- It starts with an icon in the tray (blue circle).  
+- Every **30 seconds** it scans the **Downloads** folder and organizes files.  
+- If it finds an unregistered extension, it moves it to its own `.ext` folder.  
+- From the tray menu you can:
+  - **Organize now**
+  - **Open Downloads**
+  - **Exit**
 
 ---
 
 <p align="center">
   <img src="icono.png" alt="Banner" width="500"/>
-</p>
+</p
 
----
+--- 
 
 ## 🎥 Demo
 
 <p align="center">
-  <img src="docs/Demo.gif" width="1200" alt="CyberiusUnzipCracker Demo">
+  <img src="Imagenes/Video.gif" width="1200" alt="Demo of CyberiusUnzipCracker">
 </p>
 
 ---
 
-## Tool Screenshots
+## Tool screenshots
 
-<h2 align="center">Screenshot 1</h2>
+<h2 align="center">Before and After Example</h2>
+<div align="center">
+  <img src="Imagenes/Foto Antes.png" alt="Photo 3.1" height="400px" style="display:inline-block; margin-right:10px; border: 1px solid #4f5354; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"/>
+  <img src="Imagenes/Foto Despues.png" alt="Photo 3.2" height="400px" style="display:inline-block; border: 1px solid #4f5354; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"/>
+</div>
+
+<h2 align="center">Generating Random Files</h2>
 <p align="center">
-  <img src="Foto1" alt="Screenshot 1" width="500"/>
+  <img src="Imagenes/Generando Ficheros Aleatorios.png" alt="Photo 1" width="500"/>
 </p>
 
-<h2 align="center">Screenshot 2</h2>
+<h2 align="center">Tool Running in Background</h2>
 <p align="center">
-  <img src="Foto2" alt="Screenshot 2" width="500"/>
+  <img src="Imagenes/Herrramienta Ejecutada y Ejecudad en Segundo Plano.png" alt="Photo 2" width="500"/>
 </p>
 
-<h2 align="center">Screenshot 3</h2>
+<h2 align="center">Background Process</h2>
 <p align="center">
-  <img src="Foto3" alt="Screenshot 3" width="500"/>
+  <img src="Imagenes/Proceso en Segundo Plano.png" alt="Photo 3" width="500"/>
 </p>
 
-## Description
+<h2 align="center">Background Process Options</h2>
+<p align="center">
+  <img src="Imagenes/Opciones  Proceso Segundo Plano.png" alt="Photo 3" width="500"/>
+</p>
 
-**TOOL-NAME** is a tool.....TO FILL.
+## 🚀 Features
 
-Designed with a cybersecurity focus to......TO FILL.
+- ✔️ Automatic organization of files into folders by type.  
+- ✔️ Very comprehensive predefined categories (Docs, Pics, Movies, Setups, Archives, Code, CAD, etc.).  
+- ✔️ Unrecognized files are moved into a folder named by their extension (`.xyz`).  
+- ✔️ New extensions are recorded in memory (`Unsorted`) without creating external files.  
+- ✔️ Runs in the background with a tray icon.  
+- ✔️ Windows notifications when a file is moved.  
+- ✔️ Zero external configuration dependencies (`categories.json` is embedded in the code).  
+- ✔️ Produces a **portable .exe** (no external JSON required).  
 
-## 🚀 Main Features
 
-- TO FILL.
-- TO FILL.
-- TO FILL.
+## 📑 Included categories
 
-## 🧰 Technologies Used
+The program includes a very wide catalog of extensions, such as:
 
-- TO FILL.
-- TO FILL.
-- TO FILL.
+- **Docs** → `.pdf`, `.docx`, `.pptx`, `.xls`, `.txt`, `.epub`, `.mobi`, `.djvu`, `.odt`…  
+- **Pics** → `.jpg`, `.png`, `.gif`, `.tiff`, `.heic`, `.raw`, `.cr2`, `.nef`, `.dng`…  
+- **Audio** → `.mp3`, `.wav`, `.flac`, `.aac`, `.ogg`, `.m4a`, `.mid`, `.opus`…  
+- **Movies** → `.mp4`, `.avi`, `.mkv`, `.mov`, `.wmv`, `.flv`, `.webm`, `.ts`…  
+- **Setups** → `.exe`, `.msi`, `.iso`, `.apk`, `.deb`, `.rpm`, `.pkg`…  
+- **Archives** → `.zip`, `.rar`, `.7z`, `.tar`, `.gz`, `.xz`, `.cab`, `.tgz`…  
+- **Code** → `.py`, `.sh`, `.bat`, `.ps1`, `.js`, `.html`, `.css`, `.sql`, `.cpp`, `.java`, `.go`, `.rs`, `.kt`, `.asm`…  
+- **CAD/3D** → `.dwg`, `.dxf`, `.stl`, `.step`, `.fbx`, `.blend`, `.c4d`…  
+- **Games** → `.iso`, `.nrg`, `.nds`, `.3ds`, `.gba`, `.smc`, `.nes`, `.sav`…  
+- **Security** → `.pem`, `.crt`, `.cer`, `.pfx`, `.csr`, `.asc`, `.gpg`, `.jks`…  
+- **Fonts** → `.ttf`, `.otf`, `.woff`, `.fon`…  
+- **Backups** → `.bak`, `.old`, `.vhd`, `.vmdk`, `.gho`…  
+- **Others** → `.log`, `.dat`, `.tmp`, `.url`, `.sys`…  
 
-## 📁 Project Structure
+---
+
+## 🧪 Test files generator
+
+Use `Extesions_Generator.py` to quickly generate 50 test files in your Downloads folder with random extensions to validate behavior:
 
 ```bash
-├── file.py # Main Function
-├── file.js # Main Function
-├── file.html # Main Function
+python Extesions_Generator.py
+```
+
+---
+
+## 📁 Project structure
+
+```bash
+CYSORTIFY/
+├── CySortify.py # main organizer (tray + notifications)
+├── Extesions_Generator.py # test files generator with random extensions
+├── README.md # this file (Spanish)
+└── requirements.txt # Python dependencies
 ```
 ---
 
-## 📄 Additional Documentation
+## 📄 Additional documentation
 
 - [🤝 Code of Conduct](.github/CODE_OF_CONDUCT.md)
 - [📬 How to Contribute](.github/CONTRIBUTING.md)
 - [🔐 Security](.github/SECURITY.md)
-- [⚠️ Legal Notice](DISCLAIMER.md)
+- [⚠️ Legal Disclaimer](DISCLAIMER.md)
 - [📜 License](LICENSE)
 - [📢 Support](.github/SUPPORT.md)
 
 ---
 
-## ⚙️ 1.1 Basic Installation via Clone on 🪟 Windows
+## ⚙️ 1.1 Basic usage with clone 🪟 Windows
 
 ```bash
-git clone..........
-cd TOOL-NAME
-python -m venv venv (Optional)
-.env\Scriptsctivate (Optional)
+git clone https://github.com/cyberiuscompany/CySortiFy.git
+cd CySortiFy
+python -m venv venv (Not mandatory)
+.\venv\Scripts\activate (Not mandatory)
 pip install -r requirements.txt
-python TOOL-NAME
+python CySortiFy.py
 ```
 
-## ⚙️ 1.2 Basic Installation via Clone on 🐧 Linux / macOS
+## ⚙️ 1.1 Build heavy .exe 🪟 Windows
 
 ```bash
-git clone..........
-cd TOOL-NAME
-python3 -m venv venv (Optional)
-source venv/bin/activate (Optional)
-pip install -r requirements.txt
-python3 TOOL-NAME
-```
+# Create the heavy binary .exe with everything included
+git clone https://github.com/cyberiuscompany/CySortiFy.git
+cd CySortiFy
+python -m venv venv (Not mandatory)
+.\venv\Scripts\activate (Not mandatory)
+pip install pyinstaller
+pyinstaller --clean --onefile --noconsole --version-file=version.txt --icon=cyberius.ico CySortify.py
 
-## ⚙️ 2 Installation as if it were a professional package
+# Run the program executable
+CySortiFy/
+├── dist/
+│   └── CySortiFy/
+│       └── CySortiFy.exe  ← THIS IS THE EXECUTABLE
 
-```bash
-git clone..........
-cd TOOL-NAME
-python3 -m venv venv (Optional)
-source venv/bin/activate (Optional)
-pip install -r requirements.txt
-pip install .
-TOOL-NAME
-```
+⚠️ **Attention!**
+You can move this binary anywhere because the .exe contains everything it needs to run,
+but it will take longer to start because it loads more functions, libraries and DLLs.
