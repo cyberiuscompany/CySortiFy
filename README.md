@@ -41,6 +41,12 @@ CySortify es una herramienta ligera en **Python** que organiza automáticamente 
 
 ## Fotos de Herramienta
 
+<h2 align="center">Ejemplo del Antes y el Despues</h2>
+<div align="center">
+  <img src="Imagenes/Foto Antes.png" alt="Foto 3.1" height="700px" style="display:inline-block; margin-right:10px; border: 1px solid #4f5354; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"/>
+  <img src="Imagenes/Foto Despues.png" alt="Foto 3.2" height="700px" style="display:inline-block; border: 1px solid #4f5354; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"/>
+</div>
+
 <h2 align="center">Foto 1</h2>
 <p align="center">
   <img src="Foto1" alt="Foto 1" width="500"/>
