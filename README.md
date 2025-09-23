@@ -34,7 +34,7 @@ CySortify es una herramienta ligera en **Python** que organiza automáticamente 
 ## 🎥 Demostración
 
 <p align="center">
-  <img src="docs/Demo.gif" width="1200" alt="Demostración de CyberiusUnzipCracker">
+  <img src="Imagenes/Video.gif" width="1200" alt="Demostración de CyberiusUnzipCracker">
 </p>
 
 ---
