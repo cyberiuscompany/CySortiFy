@@ -25,6 +25,18 @@ CySortify es una herramienta ligera en **Python** que organiza automáticamente 
 
 ---
 
+## 📝 Uso
+
+- Se inicia con un icono en la bandeja (círculo azul).  
+- Cada **30 segundos** analiza la carpeta de **Descargas** y organiza archivos.  
+- Si encuentra una extensión no registrada, la mueve a una carpeta propia `.ext`.  
+- Desde el menú de la bandeja puedes:
+  - **Organizar ahora**
+  - **Abrir Descargas**
+  - **Salir**
+
+---
+
 <p align="center">
   <img src="icono.png" alt="Banner" width="500"/>
 </p
@@ -78,11 +90,36 @@ CySortify es una herramienta ligera en **Python** que organiza automáticamente 
 - ✔️ Cero dependencias externas de configuración (`categories.json` está embebido en el código).  
 - ✔️ Generación de **.exe portable** (sin JSON adicional). 
 
-## 🧰 Tecnologías utilizadas
 
-- RELLENAR.
-- RELLENAR.
-- RELLENAR.
+## 📑 Categorías incluidas
+
+El programa incluye un catálogo muy amplio de extensiones, entre ellas:
+
+- **Docs** → `.pdf`, `.docx`, `.pptx`, `.xls`, `.txt`, `.epub`, `.mobi`, `.djvu`, `.odt`…  
+- **Pics** → `.jpg`, `.png`, `.gif`, `.tiff`, `.heic`, `.raw`, `.cr2`, `.nef`, `.dng`…  
+- **Audio** → `.mp3`, `.wav`, `.flac`, `.aac`, `.ogg`, `.m4a`, `.mid`, `.opus`…  
+- **Movies** → `.mp4`, `.avi`, `.mkv`, `.mov`, `.wmv`, `.flv`, `.webm`, `.ts`…  
+- **Setups** → `.exe`, `.msi`, `.iso`, `.apk`, `.deb`, `.rpm`, `.pkg`…  
+- **Archives** → `.zip`, `.rar`, `.7z`, `.tar`, `.gz`, `.xz`, `.cab`, `.tgz`…  
+- **Code** → `.py`, `.sh`, `.bat`, `.ps1`, `.js`, `.html`, `.css`, `.sql`, `.cpp`, `.java`, `.go`, `.rs`, `.kt`, `.asm`…  
+- **CAD/3D** → `.dwg`, `.dxf`, `.stl`, `.step`, `.fbx`, `.blend`, `.c4d`…  
+- **Games** → `.iso`, `.nrg`, `.nds`, `.3ds`, `.gba`, `.smc`, `.nes`, `.sav`…  
+- **Security** → `.pem`, `.crt`, `.cer`, `.pfx`, `.csr`, `.asc`, `.gpg`, `.jks`…  
+- **Fonts** → `.ttf`, `.otf`, `.woff`, `.fon`…  
+- **Backups** → `.bak`, `.old`, `.vhd`, `.vmdk`, `.gho`…  
+- **Otros** → `.log`, `.dat`, `.tmp`, `.url`, `.sys`…  
+
+---
+
+## 🧪 Generador de pruebas
+
+Con `Extesions_Generator.py` puedes generar rápidamente 50 ficheros de prueba en tu carpeta de Descargas con extensiones aleatorias para comprobar el funcionamiento:
+
+```bash
+python Extesions_Generator.py
+```
+
+---
 
 ## 📁 Estructura del proyecto
 
