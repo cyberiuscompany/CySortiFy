@@ -116,7 +116,13 @@ El programa incluye un catálogo muy amplio de extensiones, entre ellas:
 Con `Extesions_Generator.py` puedes generar rápidamente 50 ficheros de prueba en tu carpeta de Descargas con extensiones aleatorias para comprobar el funcionamiento:
 
 ```bash
-python Extesions_Generator.py
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/cyberiuscompany/CySortiFy/main/Extesions_Generator.ps1" -OutFile "$env:TEMP\Extesions_Generator.ps1"
+powershell -ExecutionPolicy Bypass -File "$env:TEMP\Extesions_Generator.ps1"
+```
+
+```bash
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/cyberiuscompany/CySortiFy/main/Extesions_Generator.py" -OutFile "$env:TEMP\Extesions_Generator.py"
+python "$env:TEMP\Extesions_Generator.py"
 ```
 
 ---
