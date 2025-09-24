@@ -113,7 +113,7 @@ El programa incluye un catálogo muy amplio de extensiones, entre ellas:
 
 ## 🧪 Generador de pruebas
 
-Con `Extesions_Generator.py` puedes generar rápidamente 50 ficheros de prueba en tu carpeta de Descargas con extensiones aleatorias para comprobar el funcionamiento:
+Con `Extesions_Generator.ps1 & Extesions_Generator.py` puedes generar rápidamente 50 ficheros de prueba en tu carpeta de Descargas con extensiones aleatorias para comprobar el funcionamiento:
 
 ```bash
 # 1. Descargar y ejecutar el script de PowerShell (.ps1)
