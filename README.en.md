@@ -116,7 +116,7 @@ The program includes a very wide catalog of extensions, such as:
 
 ## 🧪 Test files generator
 
-Use `Extesions_Generator.py` to quickly generate 50 test files in your Downloads folder with random extensions to validate behavior:
+Use `Extesions_Generator.ps1 & Extesions_Generator.py` to quickly generate 50 test files in your Downloads folder with random extensions to validate behavior:
 
 ```bash
 # 1. Download and run the PowerShell Script (.ps1)
