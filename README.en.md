@@ -119,7 +119,15 @@ The program includes a very wide catalog of extensions, such as:
 Use `Extesions_Generator.py` to quickly generate 50 test files in your Downloads folder with random extensions to validate behavior:
 
 ```bash
-python Extesions_Generator.py
+# 1. Download and run the PowerShell Script (.ps1)
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/cyberiuscompany/CySortiFy/main/Extesions_Generator.ps1" -OutFile "$env:TEMP\Extesions_Generator.ps1"
+powershell -ExecutionPolicy Bypass -File "$env:TEMP\Extesions_Generator.ps1"
+```
+
+```bash
+# 2. Download and run the Python Script (.py)
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/cyberiuscompany/CySortiFy/main/Extesions_Generator.py" -OutFile "$env:TEMP\Extesions_Generator.py"
+python "$env:TEMP\Extesions_Generator.py"
 ```
 
 ---
