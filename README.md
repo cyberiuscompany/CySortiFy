@@ -64,7 +64,7 @@ CySortify es una herramienta ligera en **Python** que organiza automáticamente 
   <img src="Imagenes/Generando Ficheros Aleatorios.png" alt="Foto 1" width="500"/>
 </p>
 
-<h2 align="center">Herrramienta Ejecutada y Ejecudad en Segundo Plano</h2>
+<h2 align="center">Herrramienta Ejecutada y Ejecutando en Segundo Plano</h2>
 <p align="center">
   <img src="Imagenes/Herrramienta Ejecutada y Ejecudad en Segundo Plano.png" alt="Foto 2" width="500"/>
 </p>
